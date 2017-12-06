@@ -7,5 +7,5 @@
 %%
 
 "//".* { ; }
-\r\n {return new Yytoken("\n"); }
+\n {return new Yytoken("\n"); }
 .+ {return new Yytoken(yytext()); }
